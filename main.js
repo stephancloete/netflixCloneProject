@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data() {
       return {
-        dataOne: true,
+        dataOne: 'Vue Test',
         dataTwo: []
       }
     },
