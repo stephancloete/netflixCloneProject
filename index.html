@@ -5,13 +5,31 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     
+
+      <!-- Import Styles -->
+      <link rel="stylesheet" href="/css/style.css">
+
+      <!-- Import Vue.js -->
+      <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+
       <title>Title</title>
      
    </head>
    <body>
-     
+     <div id="app"></div>
       <h1>Hello World</h1>
      
+      <!-- Import App -->
+    <script src="./main.js"></script>
+
+    <!-- Import Components -->
+    <!-- <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ReviewForm.js"></script>
+    <script src="./components/ReviewList.js"></script> -->
+
+    <!-- Mount App -->
+    <script>
+      app.mount('#app')
+    </script>
    </body>
 </html>
