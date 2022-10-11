@@ -107,24 +107,38 @@
   .nav__logo {
     width: 80px;
     object-fit: contain;
+    justify-content: flex-start;
   }
   
   .nav__avatar {
     width: 30px;
     object-fit: contain;
+    justify-content: flex-end;
   }
   
+  .nav_text {
+    align-items: center;
+    color: #e5e5e5;
+    height: 100%;
+    position: relative;
+    transition: color .4s;
+    justify-content: flex-start;
+    
+  }
+
   .nav {
-    position: fixed;
+    align-items: center;
+    display: flex;
+    position: relative;
     top: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
     /* background-color: #111; */
     z-index: 1;
     transition-timing-function: ease-in;
     transition: all 0.5s;
+    
+    
   }
   
   .nav__black {
