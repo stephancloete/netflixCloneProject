@@ -22,7 +22,7 @@ img {
     height: 100%;
 }
 
-/* nav */
+/* nav bar */
 .navContainer {
     display: flex;
     flex-direction: row;
@@ -31,20 +31,41 @@ img {
     height: 68px;
 
 }
-
+/* logo */
 .navLogo {
-    width: 125px;
-
+    width: 120px;
+    margin-top: 0.3%;
+    align-items: center;
 }
-
+/* menu */
 .navMenu {
     color: white;
     font-size: 20px;
-
+    align-items: center;
+}
+/* sub menu */
+.navSubMenu {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
 }
 
-.navAvatar {
-    width: 50px;
-    margin-left: auto;
+.searchIcon{
+    width: 25%;
+    height: 25%;
+    padding: 8%;
+}
 
+.bellIcon{
+    width: 30%;
+    height: 30%;
+    padding: 8%;
+}
+
+.avatar  {
+    width: 40%;
+    height: 40%;
+    padding: 8%;
 }
