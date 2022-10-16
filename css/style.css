@@ -148,7 +148,8 @@ img {
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 20px;
+    
+    
   }
   
   .rowPoster:hover {
@@ -161,6 +162,7 @@ img {
   
   .rowPosterLarge {
     max-height: 300px;
+    margin: 20px;
   }
   
   .rowPosterLarge:hover {
@@ -170,4 +172,5 @@ img {
   .contentRow {
     color: white;
     margin-left: 20px;
+    
   }
