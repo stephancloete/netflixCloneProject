@@ -1,10 +1,10 @@
 const app = Vue.createApp({
     data() {
       return {
-        vueTest: 'Vue Test',
-        billboard: 'BILLBOARD',
-        dataTwo: []
-      }
+        image: './images/21-200x300.jpeg',
+        name: 'Prof. Ena Kulas Jr.',
+        dataOne: []
+        }
     },
     methods: {
       newMethod() {

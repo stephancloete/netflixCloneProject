@@ -42,12 +42,18 @@ img {
     margin-top: 0.3%;
     align-items: center;
 }
+.navLogo:hover {
+  cursor: pointer;
+}
 /* menu */
 .navMenu {
     color: white;
     font-size: 18px;
     align-items: center;
     margin-left: 1%;
+}
+.navMenu:hover {
+  cursor: pointer;
 }
 /* sub menu */
 .navSubMenu {
@@ -75,6 +81,23 @@ img {
     height: 30%;
     padding: 5%;
 }
+
+.searchIcon:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  transition-delay: 100ms;
+}
+.bellIcon:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  transition-delay: 100ms;
+}
+.avatar:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition-delay: 100ms;
+}
+
 
 /* billboard section */
 
@@ -148,12 +171,15 @@ img {
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    
-    
   }
   
+  .posterText {
+    display: flex;
+    justify-content: space-around;
+  }
   .rowPoster:hover {
     transform: scale(1.08);
+    cursor: pointer;
   }
   
   .rowPosters::-webkit-scrollbar {
@@ -167,6 +193,8 @@ img {
   
   .rowPosterLarge:hover {
     transform: scale(1.09);
+    transition-delay: 500ms;
+    cursor: pointer;
   }
   
   .contentRow {
