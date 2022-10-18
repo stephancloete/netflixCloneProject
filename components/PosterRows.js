@@ -15,6 +15,7 @@ app.component('poster-rows', {
       films: []
       }
   },
+  /* how to fetch JSON data: https://www.youtube.com/watch?v=7iDGJolHFmU */
   mounted() {
     fetch('https://project-apis.codespace.co.za/api/movies')
         .then(res => res.json())
