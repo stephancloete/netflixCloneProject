@@ -1,19 +1,23 @@
 app.component('poster-rows', {
     template:
     /*html*/
-    ` <div class="contentRow">
+    ` <div v-if="films" class="contentRow">
         <h2>New & Noteworthy</h2>
         <div class="rowPosters">               
             <div class="rowPosterLarge">
               <img :src="image" alt="" />
               <p class="posterText">{{name}}</p>      
             </div>
-            <li v-for="film in films" :key="film.id" class= "posterText">{{films}}</li>
+            
+            <div class="rowPosterLarge">
+              <li v-for="film in films" :key="film.id">{{}}</li>
+            </div>
+
         </div>
       </div>`,
  data() {
     return {
-      films: [],
+      films: null,
       image: './images/21-200x300.jpeg',
       name: 'Prof. Ena Kulas Jr.'
       }
@@ -26,6 +30,7 @@ app.component('poster-rows', {
         .then(res => res.json())
         .then(data => this.films = data)
         .catch(err => console.log(err.message))
+        
   },
   methods: {
 
