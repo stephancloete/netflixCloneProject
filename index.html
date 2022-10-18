@@ -82,34 +82,10 @@
              <div class="billboardFadeBottom"></div>
          </div>
 
-         <div class="contentRow">
-            <h2>New & Noteworthy</h2>
-            <div class="rowPosters">               
-               <div class="rowPosterLarge">
-                     <img :src="image" alt="Prof. Ena Kulas Jr." />
-                     <p class="posterText">{{name}}</p>
-               </div>
-               <!-- <div class="rowPosterLarge">
-                  <img src="/images/1023-200x300.jpeg" alt="" />
-                  <p>Maximo Powlowski V</p>
-              </div>
-              
-              <div class="rowPosterLarge">
-                  <img src="/images/179-200x300.jpeg" alt="" />
-                  <p class="posterText">Madelyn Schinner</p>
-              </div>
-      
-              <div class="rowPosterLarge">
-                  <img src="/images/302-200x300.jpeg" alt="" />
-                  <p class="posterText">Easton Sauer</p>
-              </div>
-             
-              <div class="rowPosterLarge">
-                  <img src="/images/401-200x300.jpeg" alt="" />
-                  <p class="posterText">Durward Green</p>
-              </div> -->
-            </div>
-         </div>
+         
+         <!-- display posterRows component -->
+         <poster-rows></poster-rows>
+         
       </div>
 
       <div class="footer">
@@ -123,9 +99,8 @@
     <script src="./main.js"></script>
 
     <!-- Import Components -->
-    <!-- <script src="./components/ProductDisplay.js"></script>
-    <script src="./components/ReviewForm.js"></script>
-    <script src="./components/ReviewList.js"></script> -->
+    <script src="./components/PosterRows.js"></script>
+
 
     <!-- Mount App -->
     <script>
